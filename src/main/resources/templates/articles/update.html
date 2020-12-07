@@ -7,32 +7,43 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         table {border: black 1px solid}
-        table tr {border: black 1px solid}
-        table tr td {border: black 1px solid}
-        table tr th {border: black 1px solid}
+        table tr{border: black 1px solid}
+        table tr td{border: black 1px solid}
+        table tr th{border: black 1px solid}
+
+             
     </style>
 </head>
 <body>
-    <h1> Update </h1>
-    <a id="home" href="#"> Go Home </a>
+    <h1>Update</h1>
+    <a id="home" href="#">Go Home</a>
     <table class="table">
         <thead>
+            
             <tr class="table-active">
-                <th scope="col" style="width: 60%"><br>
-                    </th>
-                <th scope="col" style="width: 40%" class="text-right">조회 : 
-                    <br> </th>
+                <th  style="width: 10%">글번호: <span id ="artNum"></span></th>
+                <th  style="width: 30%">글쓴이ID: <span id="writerId">hong</span></th>
+                <th  style="width: 30%">수정일: <span id="regDate">2020 12 01</span></th>
+                <th  style="width: 30%">조회수: <span ud="count">100</span></th>
+                
+                
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><pre></pre></td>
+                <td colspan="4" style="width: 100%"><span id="title">수정할제목</span></td>
+                <td colspan="4" style="width: 100%">
+                    <testarea id="content">
+                    수정할 내용
+                </testarea>
+            </td>
             </tr>
         </tbody>
     </table>
+   
 
     <script>
-        document.getElementById('home').addEventListener('click', e => { location.href="/"})
-   </script>
+         document.getElementById('home').addEventListener('click', e => {location.href = '/'})
+    </script>
 </body>
 </html>

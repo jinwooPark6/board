@@ -19,16 +19,24 @@
     <a id="home" href="#">Go Home</a>
     <table class="table">
         <thead>
+            
             <tr class="table-active">
-                <th scope="col" style="width: 60%"><br>
-                   </th>
-                <th scope="col" style="width: 40%" class="text-right">조회 : 
-                    <br> </th>
+                <th  style="width: 10%">글번호: <span id ="artNum"></span></th>
+                <th  style="width: 30%">글쓴이ID: <span id="writerId">hong</span></th>
+                <th  style="width: 30%">작성일: <span id="regDate">2020 12 01</span></th>
+                <th  style="width: 30%">조회수: <span ud="count">100</span></th>
+                
+                
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td><pre></pre></td>
+                <td colspan="4" style="width: 100%">제목: <span id="title">테스트</span></td>
+                <td colspan="4" style="width: 100%">
+                    <testarea id="content">
+                    게시글 테스트
+                </testarea>
+            </td>
             </tr>
         </tbody>
     </table>
