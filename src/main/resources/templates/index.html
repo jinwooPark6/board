@@ -8,10 +8,16 @@
 </head>
 <body>
     <h1> Home </h1>
-   
+   <a id ='write' href="#">글쓰기</a>
+   <a id ='detail' href="#">글 상세</a>
+   <a id ='update' href="#">글 수정</a>
+   <a id = 'list' href="#">글 목록</a>
 
     <script>
-         
+         document.getElementById('write').addEventListener('click', e => {location.href = '/move/articles/write'})
+         document.getElementById('detail').addEventListener('click', e => {location.href = '/move/articles/detail'})
+         document.getElementById('update').addEventListener('click', e => {location.href = '/move/articles/update'})
+         document.getElementById('list').addEventListener('click', e => {location.href = '/move/articles/list'})
     </script>
 </body>
 </html>
