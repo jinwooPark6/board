@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        table {border: black 1px solid}
+        table tr {border: black 1px solid}
+        table tr td {border: black 1px solid}
+        table tr th {border: black 1px solid}
+    </style>
 </head>
 <body>
-    <h1>글 수정</h1>
-    <a id="home" href="#">Go Home</a>
+    <h1> Update </h1>
+    <a id="home" href="#"> Go Home </a>
+    <table class="table">
+        <thead>
+            <tr class="table-active">
+                <th scope="col" style="width: 60%"><br>
+                    </th>
+                <th scope="col" style="width: 40%" class="text-right">조회 : 
+                    <br> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><pre></pre></td>
+            </tr>
+        </tbody>
+    </table>
 
     <script>
-         document.getElementById('home').addEventListener('click', e => {location.href = '/'})
-    </script>
+        document.getElementById('home').addEventListener('click', e => { location.href="/"})
+   </script>
 </body>
 </html>
